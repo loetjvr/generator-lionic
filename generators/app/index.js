@@ -11,6 +11,9 @@ module.exports = yeoman.generators.Base.extend({
     this.appname = this.appname || path.basename(process.cwd());
     this.appname = this._.camelize(this._.slugify(
       this._.humanize(this.appname)));
+
+    this.config.set('scriptsDir', 'www/js/');
+    this.config.set('viewsDir', 'www/templates/');
   },
   writing: {
     files: function() {
@@ -20,12 +23,18 @@ module.exports = yeoman.generators.Base.extend({
       this.template('_jscsrc', '.jscsrc');
       this.template('_jshintrc', '.jshintrc');
       this.template('bower.json');
+      this.template('config.xml');
       this.template('gulpfile.js');
       this.template('package.json');
+      this.template('wire.dep');
+      this.template('ionic.project');
     },
     directories: function() {
-      this.directory('app');
+      this.directory('www');
       this.directory('test');
+      this.directory('hooks');
+      this.directory('plugins');
+      this.directory('scss');
     }
   },
   install: function() {

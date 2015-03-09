@@ -1,13 +1,12 @@
-# generator-yangular ![Build Status](https://travis-ci.org/loetjvr/generator-yangular.svg?branch=master) [![Dependency Status](https://david-dm.org/loetjvr/generator-yangular.svg)](https://david-dm.org/loetjvr/generator-yangular.svg)
+# generator-lionic ![Build Status](https://travis-ci.org/loetjvr/generator-lionic.svg?branch=master) [![Dependency Status](https://david-dm.org/loetjvr/generator-lionic.svg)](https://david-dm.org/loetjvr/generator-lionic.svg)
 
-> Yeoman generator for AngularJS with [Gulp](http://gulpjs.com/), [Bootstrap](http://getbootstrap.com) and [LESS](http://lesscss.org/)
-> based on [generator-angular](https://github.com/yeoman/generator-angular)
+> Yeoman generator for [Ionic](http://ionicframework.com/)
 
 ## Installation
 
-Install `yo`, `gulp`, `bower`, `generator-yangular`:
+Install `yo`, `gulp`, `bower`, `generator-lionic`, `generator-yangular` `ionic`:
 ```
-npm install -g gulp bower yo generator-yangular
+npm install -g gulp bower yo generator-lionic generator-yangular ionic
 ```
 
 Make a new directory, and `cd` into it:
@@ -15,24 +14,18 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd my-new-project
 ```
 
-Run `yo yangular`, optionally passing an app name:
+Run `yo lionic`, optionally passing an app name:
 ```
-yo yangular [app-name]
+yo lionic [app-name]
+```
+
+## Ionic CLI
+Serve the project at `http://locahost:8100`
+```
+ionic serve
 ```
 
 ## Gulpfile
-Serve the project at `http://locahost:9000`
-```
-gulp serve
-```
-Add the option `--open` to open and serve the project at `http://locahost:9000`
-```
-gulp serve --open
-```
-Generate a `dist` directory ready for production
-```
-gulp build
-```
 Run Karma tests
 ```
 gulp test
@@ -46,35 +39,35 @@ gulp docs
 
 Available generators:
 ```bash
-yo yangular:view name
+yo lionic:view name
 ```
 
 ```bash
-yo yangular:controller name
+yo lionic:controller name
 ```
 
 ```bash
-yo yangular:route name
+yo lionic:route name
 ```
 
 ```bash
-yo yangular:directive name
+yo lionic:directive name
 ```
 
 ```bash
-yo yangular:filter name
+yo lionic:filter name
 ```
 
 ```bash
-yo yangular:service name
+yo lionic:service name
 ```
 
 ```bash
-yo yangular:factory name
+yo lionic:factory name
 ```
 
 ```bash
-yo yangular:constant name
+yo lionic:constant name
 ```
 
 ## License
