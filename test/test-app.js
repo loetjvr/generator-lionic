@@ -38,7 +38,6 @@ describe('lionic:app', function() {
       'www/templates/main.html',
       'www/templates/nav.html',
       'scss/main.scss',
-      'plugins/',
       'hooks/'
     ]);
   });
