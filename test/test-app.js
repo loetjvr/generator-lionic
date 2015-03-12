@@ -35,6 +35,8 @@ describe('lionic:app', function() {
       'www/index.html',
       'www/js/app.js',
       'www/js/controllers/main.js',
+      'www/lib/vendor.js',
+      'www/css/main.css',
       'www/templates/main.html',
       'www/templates/nav.html',
       'scss/main.scss',

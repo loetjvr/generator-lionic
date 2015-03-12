@@ -70,6 +70,11 @@ yo lionic:factory name
 yo lionic:constant name
 ```
 
+## Editor Plugins
+* [EditorConfig](http://editorconfig.org/#download)
+* [JSHint](http://jshint.com/install/)
+* [JSSC](http://jscs.info/overview.html)
+
 ## License
 
 MIT
