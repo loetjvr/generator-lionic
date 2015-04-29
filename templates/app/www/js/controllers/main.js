@@ -12,7 +12,7 @@ angular.module('<%= appname %>')
     $scope.tasks = [
       'view',
       'controller',
-      'route',
+      'state',
       'directive',
       'filter',
       'service',

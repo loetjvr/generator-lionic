@@ -47,7 +47,7 @@ yo lionic:controller name
 ```
 
 ```bash
-yo lionic:route name
+yo lionic:state name
 ```
 
 ```bash

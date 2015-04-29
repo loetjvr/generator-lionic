@@ -5,15 +5,10 @@ var fs = require('fs');
 
 var exports = {
   wireRoute: function(vars) {
-    var script = '})\n      .state(\'nav.' + vars.filename + '\', {\n' +
+    var script = '})\n      .state(\'' + vars.filename + '\', {\n' +
       '        url: \'/' + vars.filename + '\',\n' +
-      '        views: {\n' +
-      '          \'nav-' + vars.filename + '\': {\n' +
-      '            templateUrl: \'templates/' + vars.filename + '.html\',\n' +
-      '            controller: \'' + vars.ctrlname + 'Ctrl\'\n' +
-      '          }\n' +
-      '        }\n' +
-      '      }); // inject:state';
+      '        templateUrl: \'templates/' + vars.filename + '.html\',\n' +
+      '      }); //inject:state';
 
     var file = path.join(process.cwd(), 'www/js/app.js');
 
